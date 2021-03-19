@@ -29,8 +29,6 @@ namespace Primer_Examen_Parcial
         /// </summary>
         private void InitializeComponent()
         {
-            this.texCarnet = new System.Windows.Forms.TextBox();
-            this.texCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,22 +37,16 @@ namespace Primer_Examen_Parcial
             this.dateTimeDevolucion = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataNoDevueltos = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dataPrestamos = new System.Windows.Forms.DataGridView();
+            this.texCodigo = new System.Windows.Forms.TextBox();
+            this.texCarnet = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNoDevueltos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPrestamos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // texCarnet
-            // 
-            this.texCarnet.Location = new System.Drawing.Point(115, 26);
-            this.texCarnet.Name = "texCarnet";
-            this.texCarnet.Size = new System.Drawing.Size(305, 20);
-            this.texCarnet.TabIndex = 0;
-            // 
-            // texCodigo
-            // 
-            this.texCodigo.Location = new System.Drawing.Point(115, 61);
-            this.texCodigo.Name = "texCodigo";
-            this.texCodigo.Size = new System.Drawing.Size(305, 20);
-            this.texCodigo.TabIndex = 1;
             // 
             // label1
             // 
@@ -134,24 +126,78 @@ namespace Primer_Examen_Parcial
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Prestamo";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(521, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Lista de liros a un no devueltos";
+            // 
+            // dataNoDevueltos
+            // 
+            this.dataNoDevueltos.AllowUserToOrderColumns = true;
+            this.dataNoDevueltos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataNoDevueltos.Location = new System.Drawing.Point(476, 28);
+            this.dataNoDevueltos.Name = "dataNoDevueltos";
+            this.dataNoDevueltos.Size = new System.Drawing.Size(808, 219);
+            this.dataNoDevueltos.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Lista de Prestamos";
+            // 
+            // dataPrestamos
+            // 
+            this.dataPrestamos.AllowUserToOrderColumns = true;
+            this.dataPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataPrestamos.Location = new System.Drawing.Point(12, 300);
+            this.dataPrestamos.Name = "dataPrestamos";
+            this.dataPrestamos.Size = new System.Drawing.Size(1058, 265);
+            this.dataPrestamos.TabIndex = 14;
+            // 
+            // texCodigo
+            // 
+            this.texCodigo.Location = new System.Drawing.Point(115, 61);
+            this.texCodigo.Name = "texCodigo";
+            this.texCodigo.Size = new System.Drawing.Size(305, 20);
+            this.texCodigo.TabIndex = 1;
+            // 
+            // texCarnet
+            // 
+            this.texCarnet.Location = new System.Drawing.Point(115, 26);
+            this.texCarnet.Name = "texCarnet";
+            this.texCarnet.Size = new System.Drawing.Size(305, 20);
+            this.texCarnet.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 577);
+            this.ClientSize = new System.Drawing.Size(1316, 577);
+            this.Controls.Add(this.dataPrestamos);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dataNoDevueltos);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNoDevueltos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPrestamos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox texCarnet;
-        private System.Windows.Forms.TextBox texCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -160,6 +206,12 @@ namespace Primer_Examen_Parcial
         private System.Windows.Forms.DateTimePicker dateTimeDevolucion;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataNoDevueltos;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataPrestamos;
+        private System.Windows.Forms.TextBox texCarnet;
+        private System.Windows.Forms.TextBox texCodigo;
     }
 }
 
